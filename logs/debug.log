@@ -4432,3 +4432,11 @@ org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:748)
+2018-06-05 16:24:29.303+0000 INFO [o.n.k.i.f.GraphDatabaseFacadeFactory] Shutdown started
+2018-06-05 16:24:29.304+0000 INFO [o.n.k.i.f.GraphDatabaseFacadeFactory] Database is now unavailable
+2018-06-05 16:24:29.307+0000 INFO [o.n.b.i.BackupServer] BackupServer communication server shutting down and unbinding from  /127.0.0.1:6362
+2018-06-05 16:24:29.343+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by database shutdown @ txId: 53 checkpoint started...
+2018-06-05 16:24:29.404+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by database shutdown @ txId: 53 checkpoint completed in 60ms
+2018-06-05 16:24:29.431+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2018-06-05 16:24:29.450+0000 INFO [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics START ---
+2018-06-05 16:24:29.450+0000 INFO [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics END ---

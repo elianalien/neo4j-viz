@@ -375,3 +375,6 @@ org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:748)
+2018-06-05 16:24:29.193+0000 INFO  Neo4j Server shutdown initiated by request
+2018-06-05 16:24:29.303+0000 INFO  Stopping...
+2018-06-05 16:24:29.461+0000 INFO  Stopped.
