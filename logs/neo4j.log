@@ -1,0 +1,377 @@
+Active database: graph.db
+Directories in use:
+  home:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0
+  config:       /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/conf
+  logs:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/logs
+  plugins:      /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/plugins
+  import:       /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/import
+  data:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/data
+  certificates: /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/certificates
+  run:          /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/run
+Starting Neo4j.
+2018-05-28 06:56:46.862+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-28 06:56:47.087+0000 INFO  Starting...
+2018-05-28 06:56:52.258+0000 INFO  Initiating metrics...
+2018-05-28 06:56:56.669+0000 INFO  Sending metrics to CSV file at /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/metrics
+2018-05-28 06:56:57.453+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-28 06:56:59.815+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-28 06:56:59.817+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-28 06:57:02.677+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-28 06:57:02.679+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-28 06:57:05.676+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-28 06:57:05.676+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-28 06:57:08.334+0000 INFO  Started.
+2018-05-28 06:57:08.968+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-28 06:57:08.994+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-28 06:57:09.734+0000 INFO  Mounted REST API at: /db/manage
+2018-05-28 06:57:09.937+0000 INFO  Server thread metrics has been registered successfully
+2018-05-28 06:57:11.389+0000 WARN  Low configured threads: (max={} - required={})={} < warnAt={} for {}
+2018-05-28 06:57:11.444+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-28 07:01:18.605+0000 ERROR Unexpected error detected in bolt session 'b88d12fffe291f12-00003d83-00000007-1e756e671ca29a8a-93394ffc'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.MetricsReportingBoltConnection.lambda$enqueue$0(MetricsReportingBoltConnection.java:69)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.MetricsReportingBoltConnection.processNextBatch(MetricsReportingBoltConnection.java:87)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-28 07:11:38.785+0000 ERROR Unexpected error detected in bolt session 'b88d12fffe291f12-00003d83-0000001a-8112864611391304-441a24df'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.MetricsReportingBoltConnection.lambda$enqueue$0(MetricsReportingBoltConnection.java:69)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.MetricsReportingBoltConnection.processNextBatch(MetricsReportingBoltConnection.java:87)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-28 07:19:21.544+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-28 07:19:21.661+0000 INFO  Stopping...
+2018-05-28 07:19:21.823+0000 INFO  Stopped.
+Active database: graph.db
+Directories in use:
+  home:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0
+  config:       /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/conf
+  logs:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/logs
+  plugins:      /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/plugins
+  import:       /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/import
+  data:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/data
+  certificates: /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/certificates
+  run:          /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/run
+Starting Neo4j.
+2018-05-28 07:45:41.334+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-28 07:45:41.549+0000 INFO  Starting...
+2018-05-28 07:45:45.844+0000 INFO  Initiating metrics...
+2018-05-28 07:45:49.299+0000 INFO  Sending metrics to CSV file at /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/metrics
+2018-05-28 07:45:50.049+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-28 07:45:52.685+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-28 07:45:52.687+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-28 07:45:55.306+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-28 07:45:55.307+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-28 07:45:58.306+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-28 07:45:58.306+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-28 07:46:01.302+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-28 07:46:01.303+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-28 07:46:04.305+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-28 07:46:04.306+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-28 07:46:07.303+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-28 07:46:07.597+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-28 07:46:10.306+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-28 07:46:10.306+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-28 07:46:13.305+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-28 07:46:13.306+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-28 07:46:16.305+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-28 07:46:16.305+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-28 07:46:19.305+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-28 07:46:19.306+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-28 07:46:22.304+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-28 07:46:22.304+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-28 07:46:25.304+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-28 07:46:25.304+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-28 07:46:28.302+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-28 07:46:28.302+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-28 07:46:31.302+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-28 07:46:31.302+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-28 07:46:32.843+0000 INFO  Started.
+2018-05-28 07:46:34.304+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-28 07:46:34.416+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-28 07:46:35.177+0000 INFO  Mounted REST API at: /db/manage
+2018-05-28 07:46:36.662+0000 INFO  Server thread metrics has been registered successfully
+2018-05-28 07:46:41.608+0000 WARN  Low configured threads: (max={} - required={})={} < warnAt={} for {}
+2018-05-28 07:46:41.624+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-28 08:01:03.142+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-28 08:01:03.199+0000 INFO  Stopping...
+2018-05-28 08:01:03.702+0000 INFO  Stopped.
+Active database: graph.db
+Directories in use:
+  home:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0
+  config:       /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/conf
+  logs:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/logs
+  plugins:      /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/plugins
+  import:       /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/import
+  data:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/data
+  certificates: /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/certificates
+  run:          /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/run
+Starting Neo4j.
+2018-05-31 04:58:55.514+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-31 04:58:55.866+0000 INFO  Starting...
+2018-05-31 04:59:07.530+0000 INFO  Initiating metrics...
+2018-05-31 04:59:13.528+0000 INFO  Sending metrics to CSV file at /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/metrics
+2018-05-31 04:59:14.573+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-31 04:59:17.162+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-31 04:59:17.168+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-31 04:59:19.535+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-31 04:59:19.535+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-31 04:59:22.534+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-31 04:59:22.535+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-31 04:59:25.431+0000 INFO  Started.
+2018-05-31 04:59:25.825+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-31 04:59:25.826+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-31 04:59:27.661+0000 INFO  Mounted REST API at: /db/manage
+2018-05-31 04:59:28.036+0000 INFO  Server thread metrics has been registered successfully
+2018-05-31 04:59:30.183+0000 WARN  Low configured threads: (max={} - required={})={} < warnAt={} for {}
+2018-05-31 04:59:30.257+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-31 07:43:03.800+0000 ERROR Unexpected error detected in bolt session 'b88d12fffe291f12-00004601-00000e69-118a91a5d7822a66-b1a86375'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.MetricsReportingBoltConnection.lambda$enqueue$0(MetricsReportingBoltConnection.java:69)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.MetricsReportingBoltConnection.processNextBatch(MetricsReportingBoltConnection.java:87)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-31 11:52:31.397+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-31 11:52:31.601+0000 INFO  Stopping...
+2018-05-31 11:52:32.168+0000 INFO  Stopped.
+Active database: graph.db
+Directories in use:
+  home:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0
+  config:       /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/conf
+  logs:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/logs
+  plugins:      /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/plugins
+  import:       /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/import
+  data:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/data
+  certificates: /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/certificates
+  run:          /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/run
+Starting Neo4j.
+2018-05-31 12:02:08.973+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-31 12:02:09.205+0000 INFO  Starting...
+2018-05-31 12:02:16.835+0000 INFO  Initiating metrics...
+2018-05-31 12:02:20.535+0000 INFO  Sending metrics to CSV file at /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/metrics
+2018-05-31 12:02:21.352+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-31 12:02:23.757+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-31 12:02:23.758+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-31 12:02:26.537+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-31 12:02:26.538+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-31 12:02:28.337+0000 INFO  Started.
+2018-05-31 12:02:28.586+0000 INFO  Mounted REST API at: /db/manage
+2018-05-31 12:02:28.647+0000 INFO  Server thread metrics has been registered successfully
+2018-05-31 12:02:29.683+0000 WARN  Low configured threads: (max={} - required={})={} < warnAt={} for {}
+2018-05-31 12:02:29.699+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-31 12:02:35.686+0000 ERROR Unexpected error detected in bolt session 'b88d12fffe291f12-00004fe2-00000005-87a5124124e0460d-f8dd5eaf'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.MetricsReportingBoltConnection.lambda$enqueue$0(MetricsReportingBoltConnection.java:69)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.MetricsReportingBoltConnection.processNextBatch(MetricsReportingBoltConnection.java:87)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-31 12:19:33.739+0000 ERROR Unexpected error detected in bolt session 'b88d12fffe291f12-00004fe2-000000de-7d1bf411da2fcec4-74a3618c'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.MetricsReportingBoltConnection.lambda$enqueue$0(MetricsReportingBoltConnection.java:69)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.MetricsReportingBoltConnection.processNextBatch(MetricsReportingBoltConnection.java:87)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-31 12:29:47.099+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-31 12:29:47.123+0000 INFO  Stopping...
+2018-05-31 12:29:47.288+0000 INFO  Stopped.
+Active database: graph.db
+Directories in use:
+  home:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0
+  config:       /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/conf
+  logs:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/logs
+  plugins:      /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/plugins
+  import:       /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/import
+  data:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/data
+  certificates: /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/certificates
+  run:          /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/run
+Starting Neo4j.
+2018-05-31 12:33:03.013+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-31 12:33:03.050+0000 INFO  Starting...
+2018-05-31 12:33:04.727+0000 INFO  Initiating metrics...
+2018-05-31 12:33:05.654+0000 INFO  Sending metrics to CSV file at /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/metrics
+2018-05-31 12:33:05.904+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-31 12:33:08.459+0000 INFO  Started.
+2018-05-31 12:33:08.672+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-05-31 12:33:08.672+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-05-31 12:33:08.691+0000 INFO  Mounted REST API at: /db/manage
+2018-05-31 12:33:08.761+0000 INFO  Server thread metrics has been registered successfully
+2018-05-31 12:33:09.694+0000 WARN  Low configured threads: (max={} - required={})={} < warnAt={} for {}
+2018-05-31 12:33:09.711+0000 INFO  Remote interface available at http://localhost:7474/
+2018-06-01 05:47:31.575+0000 INFO  Neo4j Server shutdown initiated by request
+2018-06-01 05:47:31.590+0000 INFO  Stopping...
+2018-06-01 05:47:31.708+0000 INFO  Stopped.
+Active database: graph.db
+Directories in use:
+  home:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0
+  config:       /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/conf
+  logs:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/logs
+  plugins:      /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/plugins
+  import:       /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/import
+  data:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/data
+  certificates: /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/certificates
+  run:          /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/run
+Starting Neo4j.
+2018-06-04 06:33:45.138+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-06-04 06:33:45.487+0000 INFO  Starting...
+2018-06-04 06:33:52.143+0000 INFO  Initiating metrics...
+2018-06-04 06:33:56.502+0000 INFO  Sending metrics to CSV file at /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/metrics
+2018-06-04 06:33:57.538+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-06-04 06:34:00.191+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-06-04 06:34:00.192+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-06-04 06:34:02.505+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-06-04 06:34:02.506+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-06-04 06:34:05.509+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-06-04 06:34:05.509+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-06-04 06:34:08.508+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-06-04 06:34:08.508+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-06-04 06:34:09.121+0000 INFO  Started.
+2018-06-04 06:34:10.158+0000 INFO  Mounted REST API at: /db/manage
+2018-06-04 06:34:10.439+0000 INFO  Server thread metrics has been registered successfully
+2018-06-04 06:34:12.354+0000 WARN  Low configured threads: (max={} - required={})={} < warnAt={} for {}
+2018-06-04 06:34:12.431+0000 INFO  Remote interface available at http://localhost:7474/
+2018-06-04 06:37:03.464+0000 ERROR Unexpected error detected in bolt session 'b88d12fffe291f12-00005a8a-00000007-1d92175382752a56-7a6c547a'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.MetricsReportingBoltConnection.lambda$enqueue$0(MetricsReportingBoltConnection.java:69)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.MetricsReportingBoltConnection.processNextBatch(MetricsReportingBoltConnection.java:87)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2018-06-04 17:49:33.615+0000 INFO  Neo4j Server shutdown initiated by request
+2018-06-04 17:49:33.771+0000 INFO  Stopping...
+2018-06-04 17:49:34.002+0000 INFO  Stopped.
+Active database: graph.db
+Directories in use:
+  home:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0
+  config:       /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/conf
+  logs:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/logs
+  plugins:      /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/plugins
+  import:       /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/import
+  data:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/data
+  certificates: /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/certificates
+  run:          /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/run
+Starting Neo4j.
+2018-06-05 15:24:42.538+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-06-05 15:24:42.878+0000 INFO  Starting...
+2018-06-05 15:24:51.297+0000 INFO  Initiating metrics...
+2018-06-05 15:24:57.501+0000 INFO  Sending metrics to CSV file at /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/metrics
+2018-06-05 15:24:58.694+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-06-05 15:25:01.188+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-06-05 15:25:01.229+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-06-05 15:25:03.506+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-06-05 15:25:03.506+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-06-05 15:25:06.509+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-06-05 15:25:06.509+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-06-05 15:25:09.508+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-06-05 15:25:09.508+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-06-05 15:25:10.548+0000 INFO  Started.
+2018-06-05 15:25:11.723+0000 INFO  Mounted REST API at: /db/manage
+2018-06-05 15:25:12.033+0000 INFO  Server thread metrics has been registered successfully
+2018-06-05 15:25:14.227+0000 WARN  Low configured threads: (max={} - required={})={} < warnAt={} for {}
+2018-06-05 15:25:14.311+0000 INFO  Remote interface available at http://localhost:7474/
+2018-06-05 15:36:05.313+0000 ERROR Unexpected error detected in bolt session 'b88d12fffe291f12-0000708e-00000007-66cffec5a37e0705-5081647f'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.MetricsReportingBoltConnection.lambda$enqueue$0(MetricsReportingBoltConnection.java:69)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.MetricsReportingBoltConnection.processNextBatch(MetricsReportingBoltConnection.java:87)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2018-06-05 15:39:59.493+0000 ERROR Unexpected error detected in bolt session 'b88d12fffe291f12-0000708e-00000036-3759eeacf0839a43-e77e04e9'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.MetricsReportingBoltConnection.lambda$enqueue$0(MetricsReportingBoltConnection.java:69)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.MetricsReportingBoltConnection.processNextBatch(MetricsReportingBoltConnection.java:87)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)

@@ -1,0 +1,17 @@
+project,domain,stack,doms
+interactive installation,multimedia ,sqllite,"backend, database"
+web app,uidesign,cassandra,"backend, database"
+mobile app,uxdesign,mysql,"backend, database"
+design research,animation,cesiumjs,"frontend, multimedia"
+,installation,mapbox,"frontend, multimedia"
+,devops,python,"frontend, multimedia, backend"
+,mobile,aftereffect,"frontend, multimedia, mobile, uidesign, uxdesign, animation"
+,frontend,premier,"frontend, multimedia, mobile, uidesign, uxdesign, animation"
+,backend,illustrator,"frontend, multimedia, mobile, uidesign, uxdesign, animation"
+,database,laravel,backend
+,indepth,unreal,multimedia
+,cocreation,unity,"multimedia, frontend"
+,designsprint,node,backend
+,usability,koi,backend
+,hardware ,usergrid,backend
+,datascience,bootstrap,frontend

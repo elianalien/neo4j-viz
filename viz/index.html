@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>neo4j vis</title>
+    <script src="https://rawgit.com/neo4j-contrib/neovis.js/master/dist/neovis.js"></script>
+    <style type="text/css">
+        #neoviz{
+            width: 1280px;
+            height: 720px;
+        }
+    </style>
+</head>
+
+<script>
+    function draw(){
+        var config = {
+            container_id: "neoviz",
+            server_url: "bolt://127.0.0.1:7687",
+            server_user: "neo4j",
+            server_password: "titiran7",
+            labels: {
+                Stack:{
+                    caption: "name",
+                    size:.5
+                },
+                Domain:{
+                    caption: "name",
+                    size:.7
+                },
+                Project:{
+                    caption: "kind",
+                    size:1
+                }
+            },
+            relationships: {
+                "TECH_STACK":{
+                    caption: false,
+                    thickness: .9,
+                },
+                "MIGHT_NEED":{
+                    caption: false,
+                    thickness: .9
+                }
+            },
+            initial_cypher: "MATCH p=()-->() RETURN p",
+            arrows: true,
+            hierarchical_layout: true,
+            hierarchical_sort_method: "directed" 
+        }
+
+        var viz = new NeoVis.default(config);
+        viz.render();
+    }
+</script>
+
+<body onload="draw()">
+    <div id="neoviz"></div>
+    
+</body>
+</html>
