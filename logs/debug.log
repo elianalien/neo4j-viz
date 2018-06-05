@@ -4440,3 +4440,590 @@ org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due
 2018-06-05 16:24:29.431+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
 2018-06-05 16:24:29.450+0000 INFO [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics START ---
 2018-06-05 16:24:29.450+0000 INFO [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics END ---
+2018-06-05 16:32:14.371+0000 INFO [o.n.k.i.f.CommunityEditionModule] No locking implementation specified, defaulting to 'forseti'
+2018-06-05 16:32:14.561+0000 INFO [o.n.k.i.f.StatementLocksFactorySelector] No services implementing StatementLocksFactory found. Using SimpleStatementLocksFactory
+2018-06-05 16:32:15.515+0000 INFO [o.n.k.AvailabilityGuard] Requirement makes database unavailable: Database available
+2018-06-05 16:32:15.565+0000 INFO [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics START ---
+2018-06-05 16:32:15.565+0000 INFO [o.n.k.i.DiagnosticsManager] Neo4j Kernel properties:
+2018-06-05 16:32:15.566+0000 INFO [o.n.k.i.DiagnosticsManager] dbms.connector.http.enabled=true
+2018-06-05 16:32:15.566+0000 INFO [o.n.k.i.DiagnosticsManager] dbms.security.auth_enabled=true
+2018-06-05 16:32:15.566+0000 INFO [o.n.k.i.DiagnosticsManager] dbms.windows_service_name=neo4j
+2018-06-05 16:32:15.566+0000 INFO [o.n.k.i.DiagnosticsManager] unsupported.dbms.directories.neo4j_home=/Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0
+2018-06-05 16:32:15.566+0000 INFO [o.n.k.i.DiagnosticsManager] dbms.directories.import=import
+2018-06-05 16:32:15.566+0000 INFO [o.n.k.i.DiagnosticsManager] dbms.memory.heap.initial_size=512m
+2018-06-05 16:32:15.566+0000 INFO [o.n.k.i.DiagnosticsManager] dbms.memory.pagecache.size=512m
+2018-06-05 16:32:15.566+0000 INFO [o.n.k.i.DiagnosticsManager] unsupported.dbms.edition=enterprise
+2018-06-05 16:32:15.567+0000 INFO [o.n.k.i.DiagnosticsManager] ha.pull_interval=10
+2018-06-05 16:32:15.567+0000 INFO [o.n.k.i.DiagnosticsManager] dbms.connector.bolt.enabled=true
+2018-06-05 16:32:15.567+0000 INFO [o.n.k.i.DiagnosticsManager] dbms.connector.https.enabled=true
+2018-06-05 16:32:15.567+0000 INFO [o.n.k.i.DiagnosticsManager] dbms.jvm.additional=-Dunsupported.dbms.udc.source=desktop
+2018-06-05 16:32:15.567+0000 INFO [o.n.k.i.DiagnosticsManager] dbms.memory.heap.max_size=1G
+2018-06-05 16:32:15.567+0000 INFO [o.n.k.i.DiagnosticsManager] Diagnostics providers:
+2018-06-05 16:32:15.567+0000 INFO [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.configuration.Config
+2018-06-05 16:32:15.568+0000 INFO [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.info.DiagnosticsManager
+2018-06-05 16:32:15.568+0000 INFO [o.n.k.i.DiagnosticsManager] SYSTEM_MEMORY
+2018-06-05 16:32:15.568+0000 INFO [o.n.k.i.DiagnosticsManager] JAVA_MEMORY
+2018-06-05 16:32:15.568+0000 INFO [o.n.k.i.DiagnosticsManager] OPERATING_SYSTEM
+2018-06-05 16:32:15.568+0000 INFO [o.n.k.i.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
+2018-06-05 16:32:15.568+0000 INFO [o.n.k.i.DiagnosticsManager] CLASSPATH
+2018-06-05 16:32:15.568+0000 INFO [o.n.k.i.DiagnosticsManager] LIBRARY_PATH
+2018-06-05 16:32:15.568+0000 INFO [o.n.k.i.DiagnosticsManager] SYSTEM_PROPERTIES
+2018-06-05 16:32:15.568+0000 INFO [o.n.k.i.DiagnosticsManager] TIMEZONE_DATABASE
+2018-06-05 16:32:15.568+0000 INFO [o.n.k.i.DiagnosticsManager] NETWORK
+2018-06-05 16:32:15.569+0000 INFO [o.n.k.i.DiagnosticsManager] System memory information:
+2018-06-05 16:32:15.607+0000 INFO [o.n.k.i.DiagnosticsManager] Total Physical memory: 8.00 GB
+2018-06-05 16:32:15.608+0000 INFO [o.n.k.i.DiagnosticsManager] Free Physical memory: 18.08 MB
+2018-06-05 16:32:15.608+0000 INFO [o.n.k.i.DiagnosticsManager] Committed virtual memory: 4.84 GB
+2018-06-05 16:32:15.609+0000 INFO [o.n.k.i.DiagnosticsManager] Total swap space: 1.00 GB
+2018-06-05 16:32:15.610+0000 INFO [o.n.k.i.DiagnosticsManager] Free swap space: 705.00 MB
+2018-06-05 16:32:15.610+0000 INFO [o.n.k.i.DiagnosticsManager] JVM memory information:
+2018-06-05 16:32:15.610+0000 INFO [o.n.k.i.DiagnosticsManager] Free  memory: 418.21 MB
+2018-06-05 16:32:15.610+0000 INFO [o.n.k.i.DiagnosticsManager] Total memory: 512.00 MB
+2018-06-05 16:32:15.610+0000 INFO [o.n.k.i.DiagnosticsManager] Max   memory: 1.00 GB
+2018-06-05 16:32:15.613+0000 INFO [o.n.k.i.DiagnosticsManager] Garbage Collector: G1 Young Generation: [G1 Eden Space, G1 Survivor Space]
+2018-06-05 16:32:15.613+0000 INFO [o.n.k.i.DiagnosticsManager] Garbage Collector: G1 Old Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen]
+2018-06-05 16:32:15.615+0000 INFO [o.n.k.i.DiagnosticsManager] Memory Pool: Code Cache (Non-heap memory): committed=6.38 MB, used=6.30 MB, max=240.00 MB, threshold=0.00 B
+2018-06-05 16:32:15.615+0000 INFO [o.n.k.i.DiagnosticsManager] Memory Pool: Metaspace (Non-heap memory): committed=16.25 MB, used=15.35 MB, max=-1.00 B, threshold=0.00 B
+2018-06-05 16:32:15.615+0000 INFO [o.n.k.i.DiagnosticsManager] Memory Pool: Compressed Class Space (Non-heap memory): committed=2.25 MB, used=2.02 MB, max=1.00 GB, threshold=0.00 B
+2018-06-05 16:32:15.615+0000 INFO [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Eden Space (Heap memory): committed=318.00 MB, used=87.00 MB, max=-1.00 B, threshold=?
+2018-06-05 16:32:15.616+0000 INFO [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Survivor Space (Heap memory): committed=5.00 MB, used=5.00 MB, max=-1.00 B, threshold=?
+2018-06-05 16:32:15.616+0000 INFO [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Old Gen (Heap memory): committed=189.00 MB, used=1.29 MB, max=1.00 GB, threshold=0.00 B
+2018-06-05 16:32:15.616+0000 INFO [o.n.k.i.DiagnosticsManager] Operating system information:
+2018-06-05 16:32:15.617+0000 INFO [o.n.k.i.DiagnosticsManager] Operating System: Mac OS X; version: 10.11.6; arch: x86_64; cpus: 8
+2018-06-05 16:32:15.618+0000 INFO [o.n.k.i.DiagnosticsManager] Max number of file descriptors: 10240
+2018-06-05 16:32:15.619+0000 INFO [o.n.k.i.DiagnosticsManager] Number of open file descriptors: 256
+2018-06-05 16:32:15.961+0000 INFO [o.n.k.i.DiagnosticsManager] Process id: 30203@elians-macbook-pro.local
+2018-06-05 16:32:15.961+0000 INFO [o.n.k.i.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2018-06-05 16:32:15.965+0000 INFO [o.n.k.i.DiagnosticsManager] Local timezone: Asia/Jakarta
+2018-06-05 16:32:15.965+0000 INFO [o.n.k.i.DiagnosticsManager] JVM information:
+2018-06-05 16:32:15.965+0000 INFO [o.n.k.i.DiagnosticsManager] VM Name: OpenJDK 64-Bit Server VM
+2018-06-05 16:32:15.965+0000 INFO [o.n.k.i.DiagnosticsManager] VM Vendor: Azul Systems, Inc.
+2018-06-05 16:32:15.965+0000 INFO [o.n.k.i.DiagnosticsManager] VM Version: 25.131-b11
+2018-06-05 16:32:15.966+0000 INFO [o.n.k.i.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2018-06-05 16:32:15.967+0000 INFO [o.n.k.i.DiagnosticsManager] VM Arguments: [-Xms512m, -Xmx1G, -XX:+UseG1GC, -XX:-OmitStackTraceInFastThrow, -XX:+AlwaysPreTouch, -XX:+UnlockExperimentalVMOptions, -XX:+TrustFinalNonStaticFields, -XX:+DisableExplicitGC, -Djdk.tls.ephemeralDHKeySize=2048, -Djdk.tls.rejectClientInitiatedRenegotiation=true, -Dunsupported.dbms.udc.source=desktop, -Dfile.encoding=UTF-8]
+2018-06-05 16:32:15.967+0000 INFO [o.n.k.i.DiagnosticsManager] Java classpath:
+2018-06-05 16:32:15.986+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/opencsv-2.3.jar
+2018-06-05 16:32:15.987+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-kernel-api-3.4.0.jar
+2018-06-05 16:32:15.987+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-compiler-2.3-2.3.12.jar
+2018-06-05 16:32:15.987+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/commons-text-1.3.jar
+2018-06-05 16:32:15.987+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jackson-jaxrs-1.9.13.jar
+2018-06-05 16:32:15.987+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/openCypher-frontend-1-3.4.0.jar
+2018-06-05 16:32:15.987+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/commons-io-2.6.jar
+2018-06-05 16:32:15.987+0000 INFO [o.n.k.i.DiagnosticsManager]  [bootstrap] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/classes
+2018-06-05 16:32:15.987+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-planner-3.4-3.4.0.jar
+2018-06-05 16:32:15.987+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-bolt-3.4.0.jar
+2018-06-05 16:32:15.987+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/asm-6.0.jar
+2018-06-05 16:32:15.987+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-codegen-3.4.0.jar
+2018-06-05 16:32:15.987+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/parboiled-scala_2.11-1.1.7.jar
+2018-06-05 16:32:15.987+0000 INFO [o.n.k.i.DiagnosticsManager]  [bootstrap] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/rt.jar
+2018-06-05 16:32:15.988+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-graph-matching-3.1.6.jar
+2018-06-05 16:32:15.988+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-enterprise-cypher-3.4.0.jar
+2018-06-05 16:32:15.988+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-backup-3.4.0.jar
+2018-06-05 16:32:15.988+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-util-3.4-3.4.0.jar
+2018-06-05 16:32:15.988+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-frontend-2.3-2.3.12.jar
+2018-06-05 16:32:15.988+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-slotted-runtime-3.4.0.jar
+2018-06-05 16:32:15.988+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/plugins/*
+2018-06-05 16:32:15.988+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-shell-3.4.0.jar
+2018-06-05 16:32:15.988+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-lucene-index-3.4.0.jar
+2018-06-05 16:32:15.988+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/simpleclient_dropwizard-0.1.0.jar
+2018-06-05 16:32:15.988+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jersey-server-1.19.3.jar
+2018-06-05 16:32:15.988+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-shell-3.4.0.jar
+2018-06-05 16:32:15.988+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/commons-beanutils-1.9.3.jar
+2018-06-05 16:32:15.988+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/bcprov-jdk15on-1.59.jar
+2018-06-05 16:32:15.989+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-logging-3.4.0.jar
+2018-06-05 16:32:15.989+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-collections-3.4.0.jar
+2018-06-05 16:32:15.989+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cluster-3.4.0.jar
+2018-06-05 16:32:15.989+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-planner-spi-3.4-3.4.0.jar
+2018-06-05 16:32:15.989+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-configuration-3.4.0.jar
+2018-06-05 16:32:15.989+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-causal-clustering-commercial-3.4.0.jar
+2018-06-05 16:32:15.989+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-causal-clustering-commercial-3.4.0.jar
+2018-06-05 16:32:15.989+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-physical-planning-3.4.0.jar
+2018-06-05 16:32:15.989+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/objenesis-2.6.jar
+2018-06-05 16:32:15.989+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-server-3.4.0.jar
+2018-06-05 16:32:15.989+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jetty-http-9.4.8.v20171121.jar
+2018-06-05 16:32:15.989+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-security-enterprise-3.4.0.jar
+2018-06-05 16:32:15.989+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/scala-library-2.11.12.jar
+2018-06-05 16:32:15.989+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-primitive-collections-3.4.0.jar
+2018-06-05 16:32:15.989+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/shiro-core-1.4.0.jar
+2018-06-05 16:32:15.990+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-expression-3.4-3.4.0.jar
+2018-06-05 16:32:15.990+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-3.4.0.jar
+2018-06-05 16:32:15.990+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-compiler-2.3-2.3.12.jar
+2018-06-05 16:32:15.990+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-server-3.4.0.jar
+2018-06-05 16:32:15.990+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jetty-servlet-9.4.8.v20171121.jar
+2018-06-05 16:32:15.990+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/slf4j-nop-1.7.25.jar
+2018-06-05 16:32:15.990+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jersey-server-1.19.3.jar
+2018-06-05 16:32:15.990+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/lucene-codecs-5.5.5.jar
+2018-06-05 16:32:15.990+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-consistency-check-3.4.0.jar
+2018-06-05 16:32:15.990+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-security-3.4.0.jar
+2018-06-05 16:32:15.990+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jersey-servlet-1.19.3.jar
+2018-06-05 16:32:15.990+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/netty-3.9.9.Final.jar
+2018-06-05 16:32:15.990+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-frontend-2.3-2.3.12.jar
+2018-06-05 16:32:15.990+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-common-3.4.0.jar
+2018-06-05 16:32:15.990+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/j3daudio.jar
+2018-06-05 16:32:15.990+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-ir-3.3-3.3.5.jar
+2018-06-05 16:32:15.990+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/j3dutils.jar
+2018-06-05 16:32:15.991+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/jai_codec.jar
+2018-06-05 16:32:15.991+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/parboiled-core-1.1.7.jar
+2018-06-05 16:32:15.991+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/plugins/
+2018-06-05 16:32:15.991+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/ext/zipfs.jar
+2018-06-05 16:32:15.991+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-spatial-index-3.4.0.jar
+2018-06-05 16:32:15.991+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/metrics-graphite-4.0.2.jar
+2018-06-05 16:32:15.991+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/asm-analysis-6.0.jar
+2018-06-05 16:32:15.991+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/lucene-queryparser-5.5.5.jar
+2018-06-05 16:32:15.991+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jackson-jaxrs-1.9.13.jar
+2018-06-05 16:32:15.991+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-logical-plans-3.3-3.3.5.jar
+2018-06-05 16:32:15.991+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/shiro-crypto-core-1.4.0.jar
+2018-06-05 16:32:15.991+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-graph-algo-3.4.0.jar
+2018-06-05 16:32:15.991+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-server-enterprise-3.4.0.jar
+2018-06-05 16:32:15.992+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-unsafe-3.4.0.jar
+2018-06-05 16:32:15.992+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/server-api-3.4.0.jar
+2018-06-05 16:32:15.992+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/libmlib_jai.jnilib
+2018-06-05 16:32:15.992+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/lucene-queryparser-5.5.5.jar
+2018-06-05 16:32:15.992+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-com-3.4.0.jar
+2018-06-05 16:32:15.992+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/shiro-config-ogdl-1.4.0.jar
+2018-06-05 16:32:15.992+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-management-3.4.0.jar
+2018-06-05 16:32:15.992+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/metrics-graphite-4.0.2.jar
+2018-06-05 16:32:15.992+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-enterprise-kernel-3.4.0.jar
+2018-06-05 16:32:15.992+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/simpleclient-0.1.0.jar
+2018-06-05 16:32:15.992+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/commons-logging-1.1.1.jar
+2018-06-05 16:32:15.992+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-lucene-upgrade-3.4.0.jar
+2018-06-05 16:32:15.992+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jetty-xml-9.4.8.v20171121.jar
+2018-06-05 16:32:15.992+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/jai_core.jar
+2018-06-05 16:32:15.992+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jetty-webapp-9.4.8.v20171121.jar
+2018-06-05 16:32:15.992+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/lz4-1.3.0.jar
+2018-06-05 16:32:15.992+0000 INFO [o.n.k.i.DiagnosticsManager]  [bootstrap] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/jsse.jar
+2018-06-05 16:32:15.993+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/ext/localedata.jar
+2018-06-05 16:32:15.993+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-dbms-3.4.0.jar
+2018-06-05 16:32:15.993+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/plugins
+2018-06-05 16:32:15.993+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-3.4.0.jar
+2018-06-05 16:32:15.993+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-lucene-index-3.4.0.jar
+2018-06-05 16:32:15.993+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-browser-3.1.12.jar
+2018-06-05 16:32:15.993+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-compiler-3.1-3.1.8.jar
+2018-06-05 16:32:15.993+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-logical-plans-3.3-3.3.5.jar
+2018-06-05 16:32:15.993+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-logical-plans-3.4-3.4.0.jar
+2018-06-05 16:32:15.993+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/commons-compress-1.16.1.jar
+2018-06-05 16:32:15.993+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/conf/
+2018-06-05 16:32:15.993+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jetty-io-9.4.8.v20171121.jar
+2018-06-05 16:32:15.993+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/javax.servlet-api-3.1.0.jar
+2018-06-05 16:32:15.993+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/scala-reflect-2.11.12.jar
+2018-06-05 16:32:15.993+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/plugins/*
+2018-06-05 16:32:15.993+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-resource-3.4.0.jar
+2018-06-05 16:32:15.994+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/netty-3.9.9.Final.jar
+2018-06-05 16:32:15.994+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/asm-util-6.0.jar
+2018-06-05 16:32:15.994+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/ext/cldrdata.jar
+2018-06-05 16:32:15.994+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jsr305-3.0.2.jar
+2018-06-05 16:32:15.994+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-metrics-3.4.0.jar
+2018-06-05 16:32:15.994+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jetty-servlet-9.4.8.v20171121.jar
+2018-06-05 16:32:15.994+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-compiler-3.3-3.3.5.jar
+2018-06-05 16:32:15.994+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/libJ3D.jnilib
+2018-06-05 16:32:15.994+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/ext/sunec.jar
+2018-06-05 16:32:15.994+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-kernel-api-3.4.0.jar
+2018-06-05 16:32:15.994+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-codegen-3.4.0.jar
+2018-06-05 16:32:15.994+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-morsel-runtime-3.4.0.jar
+2018-06-05 16:32:15.994+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/caffeine-2.6.2.jar
+2018-06-05 16:32:15.994+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jetty-util-9.4.8.v20171121.jar
+2018-06-05 16:32:15.994+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/shiro-config-ogdl-1.4.0.jar
+2018-06-05 16:32:15.995+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-morsel-runtime-3.4.0.jar
+2018-06-05 16:32:15.995+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/dns_sd.jar
+2018-06-05 16:32:15.995+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/MRJToolkit.jar
+2018-06-05 16:32:15.995+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-import-tool-3.4.0.jar
+2018-06-05 16:32:15.995+0000 INFO [o.n.k.i.DiagnosticsManager]  [bootstrap] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/resources.jar
+2018-06-05 16:32:15.995+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-kernel-3.4.0.jar
+2018-06-05 16:32:15.995+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jetty-server-9.4.8.v20171121.jar
+2018-06-05 16:32:15.995+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-server-commercial-3.4.0.jar
+2018-06-05 16:32:15.995+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/mlibwrapper_jai.jar
+2018-06-05 16:32:15.995+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-query-logging-3.4.0.jar
+2018-06-05 16:32:15.995+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/kiama_2.11-2.1.0.jar
+2018-06-05 16:32:15.995+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/shiro-config-core-1.4.0.jar
+2018-06-05 16:32:15.995+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/caffeine-2.6.2.jar
+2018-06-05 16:32:15.995+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/ext/nashorn.jar
+2018-06-05 16:32:15.995+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/libJ3DUtils.jnilib
+2018-06-05 16:32:15.995+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/simpleclient_httpserver-0.1.0.jar
+2018-06-05 16:32:15.995+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Library/gurobi651/mac64/lib/gurobi.jar
+2018-06-05 16:32:15.995+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-frontend-3.3-3.3.5.jar
+2018-06-05 16:32:15.995+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/AppleScriptEngine.jar
+2018-06-05 16:32:15.996+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-ssl-3.4.0.jar
+2018-06-05 16:32:15.996+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-security-3.4.0.jar
+2018-06-05 16:32:15.996+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-backup-3.4.0.jar
+2018-06-05 16:32:15.996+0000 INFO [o.n.k.i.DiagnosticsManager]  [bootstrap] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/jce.jar
+2018-06-05 16:32:15.996+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-jmx-3.4.0.jar
+2018-06-05 16:32:15.996+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jackson-core-asl-1.9.13.jar
+2018-06-05 16:32:15.996+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-auth-plugin-api-3.4.0.jar
+2018-06-05 16:32:15.996+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/shiro-crypto-cipher-1.4.0.jar
+2018-06-05 16:32:15.996+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/ext/jaccess.jar
+2018-06-05 16:32:15.996+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/distributions/java/zulu8.21.0.1-jdk8.0.131/lib/tools.jar
+2018-06-05 16:32:15.996+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/usr/lib/java/libjdns_sd.jnilib
+2018-06-05 16:32:15.996+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jetty-security-9.4.8.v20171121.jar
+2018-06-05 16:32:15.996+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cluster-3.4.0.jar
+2018-06-05 16:32:15.996+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/opencsv-2.3.jar
+2018-06-05 16:32:15.996+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jetty-xml-9.4.8.v20171121.jar
+2018-06-05 16:32:15.996+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-graphdb-api-3.4.0.jar
+2018-06-05 16:32:15.996+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/lucene-analyzers-common-5.5.5.jar
+2018-06-05 16:32:15.996+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/rhino-1.7.9.jar
+2018-06-05 16:32:15.996+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/slf4j-nop-1.7.25.jar
+2018-06-05 16:32:15.996+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/scallop_2.11-2.1.1.jar
+2018-06-05 16:32:15.997+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/commons-logging-1.1.1.jar
+2018-06-05 16:32:15.997+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/commons-io-2.6.jar
+2018-06-05 16:32:15.997+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-kernel-commercial-3.4.0.jar
+2018-06-05 16:32:15.997+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/concurrentlinkedhashmap-lru-1.4.2.jar
+2018-06-05 16:32:15.997+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/asm-tree-6.0.jar
+2018-06-05 16:32:15.997+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/asm-analysis-6.0.jar
+2018-06-05 16:32:15.997+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-ir-3.3-3.3.5.jar
+2018-06-05 16:32:15.997+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-logging-3.4.0.jar
+2018-06-05 16:32:15.997+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/hazelcast-all-3.7.5.jar
+2018-06-05 16:32:15.997+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jPowerShell-1.9.jar
+2018-06-05 16:32:15.997+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-ir-3.4-3.4.0.jar
+2018-06-05 16:32:15.997+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/shiro-cache-1.4.0.jar
+2018-06-05 16:32:15.997+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/metrics-core-4.0.2.jar
+2018-06-05 16:32:15.997+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-procedure-api-3.4.0.jar
+2018-06-05 16:32:15.997+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/netty-all-4.1.24.Final.jar
+2018-06-05 16:32:15.997+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/lucene-codecs-5.5.5.jar
+2018-06-05 16:32:15.997+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/shiro-event-1.4.0.jar
+2018-06-05 16:32:15.997+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/simpleclient_dropwizard-0.1.0.jar
+2018-06-05 16:32:15.997+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jetty-io-9.4.8.v20171121.jar
+2018-06-05 16:32:15.997+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/shiro-config-core-1.4.0.jar
+2018-06-05 16:32:15.998+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/shiro-crypto-hash-1.4.0.jar
+2018-06-05 16:32:15.998+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-procedure-api-3.4.0.jar
+2018-06-05 16:32:15.998+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jPowerShell-1.9.jar
+2018-06-05 16:32:15.998+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/commons-lang3-3.7.jar
+2018-06-05 16:32:15.998+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/lucene-analyzers-common-5.5.5.jar
+2018-06-05 16:32:15.998+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-csv-3.4.0.jar
+2018-06-05 16:32:15.998+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jackson-mapper-asl-1.9.13.jar
+2018-06-05 16:32:15.998+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/slf4j-api-1.7.25.jar
+2018-06-05 16:32:15.998+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Library/gurobi651/mac64/lib/libGurobiJni65.jnilib
+2018-06-05 16:32:15.998+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-interpreted-runtime-3.4.0.jar
+2018-06-05 16:32:15.998+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/shiro-crypto-core-1.4.0.jar
+2018-06-05 16:32:15.998+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-security-enterprise-3.4.0.jar
+2018-06-05 16:32:15.998+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-interpreted-runtime-3.4.0.jar
+2018-06-05 16:32:15.998+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/shiro-cache-1.4.0.jar
+2018-06-05 16:32:15.998+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-metrics-3.4.0.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jackson-mapper-asl-1.9.13.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/kiama_2.11-2.1.0.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/server-api-3.4.0.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/ext/sunpkcs11.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/lucene-core-5.5.5.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/asm-6.0.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-index-3.4.0.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jetty-server-9.4.8.v20171121.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/scala-library-2.11.12.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-jmx-3.4.0.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/commons-lang-2.6.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-kernel-commercial-3.4.0.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/bcpkix-jdk15on-1.59.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-graph-algo-3.4.0.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/commons-configuration-1.10.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/metrics-core-4.0.2.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-planner-spi-3.4-3.4.0.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/ext/sunjce_provider.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jsr311-api-1.1.2.r612.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-compiler-3.1-3.1.8.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-util-3.4-3.4.0.jar
+2018-06-05 16:32:15.999+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-ir-3.4-3.4.0.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jsr305-3.0.2.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-management-3.4.0.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/WMI4Java-1.6.1.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-values-3.4.0.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jline-2.12.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jersey-core-1.19.3.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/openCypher-frontend-1-3.4.0.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/parboiled-scala_2.11-1.1.7.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/shiro-event-1.4.0.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/concurrentlinkedhashmap-lru-1.4.2.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-graph-matching-3.1.6.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jetty-webapp-9.4.8.v20171121.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/simpleclient_httpserver-0.1.0.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/commons-beanutils-1.9.3.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/commons-text-1.3.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jProcesses-1.6.4.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-bolt-3.4.0.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-logical-plans-3.4-3.4.0.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-server-commercial-3.4.0.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-csv-3.4.0.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-command-line-3.4.0.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/shiro-lang-1.4.0.jar
+2018-06-05 16:32:16.000+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/WMI4Java-1.6.1.jar
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/libJ3DAudio.jnilib
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-query-logging-3.4.0.jar
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-frontend-3.3-3.3.5.jar
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/shiro-crypto-cipher-1.4.0.jar
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-index-3.4.0.jar
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-slotted-runtime-3.4.0.jar
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/lucene-core-5.5.5.jar
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/ext/dnsns.jar
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-collections-3.4.0.jar
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/conf
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jersey-core-1.19.3.jar
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jetty-util-9.4.8.v20171121.jar
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-ha-3.4.0.jar
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [bootstrap] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/charsets.jar
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/objenesis-2.6.jar
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/distributions/java/zulu8.21.0.1-jdk8.0.131/lib/tools.jar
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/shiro-lang-1.4.0.jar
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/simpleclient_common-0.1.0.jar
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/simpleclient_common-0.1.0.jar
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/bcpkix-jdk15on-1.59.jar
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jetty-security-9.4.8.v20171121.jar
+2018-06-05 16:32:16.001+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-causal-clustering-3.4.0.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-udc-3.4.0.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-frontend-3.1-3.1.8.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-browser-3.1.12.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-compiler-3.3-3.3.5.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-physical-planning-3.4.0.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/vecmath.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [bootstrap] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/sunrsasign.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jackson-core-asl-1.9.13.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/shiro-core-1.4.0.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-command-line-3.4.0.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-common-3.4.0.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-udc-3.4.0.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/netty-all-4.1.24.Final.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-planner-3.4-3.4.0.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-resource-3.4.0.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [bootstrap] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/jfr.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/scallop_2.11-2.1.1.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-values-3.4.0.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/commons-collections-3.2.2.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-ssl-3.4.0.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-graphdb-api-3.4.0.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jline-2.12.jar
+2018-06-05 16:32:16.002+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/commons-lang3-3.7.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-dbms-3.4.0.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/simpleclient-0.1.0.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-unsafe-3.4.0.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-runtime-util-3.4.0.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-expression-3.4-3.4.0.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/asm-tree-6.0.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/libAppleScriptEngine.jnilib
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-lucene-upgrade-3.4.0.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-kernel-3.4.0.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/lz4-1.3.0.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-spatial-index-3.4.0.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/shiro-crypto-hash-1.4.0.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/rhino-1.7.9.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/hazelcast-all-3.7.5.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-configuration-3.4.0.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jsr311-api-1.1.2.r612.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/commons-compress-1.16.1.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jersey-servlet-1.19.3.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jProcesses-1.6.4.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-runtime-util-3.4.0.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-causal-clustering-3.4.0.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-primitive-collections-3.4.0.jar
+2018-06-05 16:32:16.003+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-io-3.4.0.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/slf4j-api-1.7.25.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/javax.servlet-api-3.1.0.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/bcprov-jdk15on-1.59.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/asm-util-6.0.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/commons-collections-3.2.2.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-ha-3.4.0.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-enterprise-kernel-3.4.0.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-import-tool-3.4.0.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-com-3.4.0.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/commons-configuration-1.10.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-auth-plugin-api-3.4.0.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/scala-reflect-2.11.12.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-consistency-check-3.4.0.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-cypher-frontend-3.1-3.1.8.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/commons-lang-2.6.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-enterprise-cypher-3.4.0.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/jetty-http-9.4.8.v20171121.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/parboiled-core-1.1.7.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/j3dcore.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/Users/eliandaiva/Library/Application%20Support/Neo4j%20Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-io-3.4.0.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/lib/neo4j-server-enterprise-3.4.0.jar
+2018-06-05 16:32:16.004+0000 INFO [o.n.k.i.DiagnosticsManager] Library path:
+2018-06-05 16:32:16.005+0000 INFO [o.n.k.i.DiagnosticsManager] /Users/eliandaiva/Library/Java/Extensions
+2018-06-05 16:32:16.005+0000 INFO [o.n.k.i.DiagnosticsManager] /Library/Java/Extensions
+2018-06-05 16:32:16.005+0000 INFO [o.n.k.i.DiagnosticsManager] /Network/Library/Java/Extensions
+2018-06-05 16:32:16.005+0000 INFO [o.n.k.i.DiagnosticsManager] /System/Library/Java/Extensions
+2018-06-05 16:32:16.005+0000 INFO [o.n.k.i.DiagnosticsManager] /usr/lib/java
+2018-06-05 16:32:16.005+0000 INFO [o.n.k.i.DiagnosticsManager] /
+2018-06-05 16:32:16.005+0000 INFO [o.n.k.i.DiagnosticsManager] System.properties:
+2018-06-05 16:32:16.005+0000 INFO [o.n.k.i.DiagnosticsManager] sun.boot.library.path = /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib
+2018-06-05 16:32:16.005+0000 INFO [o.n.k.i.DiagnosticsManager] jdk.tls.rejectClientInitiatedRenegotiation = true
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] user.country.format = ID
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] gopherProxySet = false
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] path.separator = :
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] file.encoding.pkg = sun.io
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] user.country = US
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] sun.java.launcher = SUN_STANDARD
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] sun.os.patch.level = unknown
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] user.dir = /
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] sun.jnu.encoding = UTF-8
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] unsupported.dbms.udc.source = desktop
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] user.home = /Users/eliandaiva
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] user.timezone = Asia/Jakarta
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] file.encoding = UTF-8
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] user.name = eliandaiva
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] sun.java.command = com.neo4j.server.enterprise.CommercialEntryPoint --home-dir=/Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0 --config-dir=/Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/conf
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] sun.arch.data.model = 64
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] user.language = en
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] awt.toolkit = sun.lwawt.macosx.LWCToolkit
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] jdk.tls.ephemeralDHKeySize = 2048
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] file.separator = /
+2018-06-05 16:32:16.006+0000 INFO [o.n.k.i.DiagnosticsManager] sun.io.unicode.encoding = UnicodeBig
+2018-06-05 16:32:16.007+0000 INFO [o.n.k.i.DiagnosticsManager] sun.cpu.endian = little
+2018-06-05 16:32:16.007+0000 INFO [o.n.k.i.DiagnosticsManager] socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2018-06-05 16:32:16.007+0000 INFO [o.n.k.i.DiagnosticsManager] ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2018-06-05 16:32:16.007+0000 INFO [o.n.k.i.DiagnosticsManager] sun.cpu.isalist = 
+2018-06-05 16:32:16.007+0000 INFO [o.n.k.i.DiagnosticsManager] (IANA) TimeZone Database Version:
+2018-06-05 16:32:16.044+0000 INFO [o.n.k.i.DiagnosticsManager]   TimeZone version: 2017a (available for 600 zone identifiers)
+2018-06-05 16:32:16.044+0000 INFO [o.n.k.i.DiagnosticsManager] Network information:
+2018-06-05 16:32:16.048+0000 INFO [o.n.k.i.DiagnosticsManager] Interface en1:
+2018-06-05 16:32:16.048+0000 INFO [o.n.k.i.DiagnosticsManager]     address: 192.168.1.24
+2018-06-05 16:32:16.048+0000 INFO [o.n.k.i.DiagnosticsManager] Interface lo0:
+2018-06-05 16:32:16.048+0000 INFO [o.n.k.i.DiagnosticsManager]     address: 127.0.0.1
+2018-06-05 16:32:16.048+0000 INFO [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics END ---
+2018-06-05 16:32:16.835+0000 INFO [o.n.b.BoltKernelExtension] Bolt Server extension loaded.
+2018-06-05 16:32:17.206+0000 INFO [o.n.m.MetricsExtension] Initiating metrics...
+2018-06-05 16:32:17.995+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV3_4[v0.A.9] record format from store /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/data/databases/graph.db
+2018-06-05 16:32:18.182+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV3_4[v0.A.9] record format from store /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/data/databases/graph.db
+2018-06-05 16:32:18.182+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Format not configured. Selected format from the store: RecordFormat:StandardV3_4[v0.A.9]
+2018-06-05 16:32:19.738+0000 INFO [o.n.k.NeoStoreDataSource] No commits found after last check point (which is at LogPosition{logVersion=0, byteOffset=115103})
+2018-06-05 16:32:19.915+0000 INFO [o.n.k.i.DatabaseHealth] Database health set to OK
+2018-06-05 16:32:21.404+0000 INFO [o.n.m.MetricsExtension] Sending metrics to CSV file at /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/metrics
+2018-06-05 16:32:21.688+0000 INFO [o.n.b.i.BackupServer] BackupServer communication server started and bound to /127.0.0.1:6362
+2018-06-05 16:32:22.120+0000 INFO [o.n.b.BoltKernelExtension] Bolt enabled on 127.0.0.1:7687.
+2018-06-05 16:32:22.220+0000 INFO [o.n.k.AvailabilityGuard] Fulfilling of requirement makes database available: Database available
+2018-06-05 16:32:22.221+0000 INFO [o.n.k.i.f.GraphDatabaseFacadeFactory] Database is now ready
+2018-06-05 16:32:22.224+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2018-06-05 16:32:22.224+0000 INFO [o.n.k.i.DiagnosticsManager] Graph Database: enterprise single StoreId{creationTime=1527490613776, randomId=7917124774185386807, storeVersion=16094931155187206, upgradeTime=1527490613776, upgradeId=1}
+2018-06-05 16:32:22.224+0000 INFO [o.n.k.i.DiagnosticsManager] Kernel version: 3.4.0,efaa8492f0a3439d20461055219c070d83f001f3
+2018-06-05 16:32:22.224+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2018-06-05 16:32:22.230+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2018-06-05 16:32:22.230+0000 INFO [o.n.k.i.DiagnosticsManager] Store versions:
+2018-06-05 16:32:22.230+0000 INFO [o.n.k.i.DiagnosticsManager] Store versions:
+2018-06-05 16:32:22.230+0000 INFO [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore v0.A.9
+2018-06-05 16:32:22.230+0000 INFO [o.n.k.i.DiagnosticsManager]   NodeStore v0.A.9
+2018-06-05 16:32:22.230+0000 INFO [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.9
+2018-06-05 16:32:22.231+0000 INFO [o.n.k.i.DiagnosticsManager]   PropertyIndexStore v0.A.9
+2018-06-05 16:32:22.231+0000 INFO [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.9
+2018-06-05 16:32:22.231+0000 INFO [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore v0.A.9
+2018-06-05 16:32:22.231+0000 INFO [o.n.k.i.DiagnosticsManager]   PropertyStore v0.A.9
+2018-06-05 16:32:22.231+0000 INFO [o.n.k.i.DiagnosticsManager]   RelationshipStore v0.A.9
+2018-06-05 16:32:22.231+0000 INFO [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.9
+2018-06-05 16:32:22.231+0000 INFO [o.n.k.i.DiagnosticsManager]   RelationshipTypeStore v0.A.9
+2018-06-05 16:32:22.231+0000 INFO [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.9
+2018-06-05 16:32:22.231+0000 INFO [o.n.k.i.DiagnosticsManager]   LabelTokenStore v0.A.9
+2018-06-05 16:32:22.231+0000 INFO [o.n.k.i.DiagnosticsManager]   SchemaStore v0.A.9
+2018-06-05 16:32:22.231+0000 INFO [o.n.k.i.DiagnosticsManager]   RelationshipGroupStore v0.A.9
+2018-06-05 16:32:22.231+0000 INFO [o.n.k.i.DiagnosticsManager]   NeoStore v0.A.9
+2018-06-05 16:32:22.232+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2018-06-05 16:32:22.232+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2018-06-05 16:32:22.232+0000 INFO [o.n.k.i.DiagnosticsManager] Id usage:
+2018-06-05 16:32:22.232+0000 INFO [o.n.k.i.DiagnosticsManager] Id usage:
+2018-06-05 16:32:22.232+0000 INFO [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore: used=1 high=0
+2018-06-05 16:32:22.232+0000 INFO [o.n.k.i.DiagnosticsManager]   NodeStore: used=52 high=129
+2018-06-05 16:32:22.232+0000 INFO [o.n.k.i.DiagnosticsManager]   StringPropertyStore: used=6 high=5
+2018-06-05 16:32:22.233+0000 INFO [o.n.k.i.DiagnosticsManager]   PropertyIndexStore: used=5 high=4
+2018-06-05 16:32:22.233+0000 INFO [o.n.k.i.DiagnosticsManager]   StringPropertyStore: used=24 high=40
+2018-06-05 16:32:22.233+0000 INFO [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore: used=39 high=93
+2018-06-05 16:32:22.233+0000 INFO [o.n.k.i.DiagnosticsManager]   PropertyStore: used=63 high=149
+2018-06-05 16:32:22.233+0000 INFO [o.n.k.i.DiagnosticsManager]   RelationshipStore: used=109 high=179
+2018-06-05 16:32:22.233+0000 INFO [o.n.k.i.DiagnosticsManager]   StringPropertyStore: used=4 high=3
+2018-06-05 16:32:22.233+0000 INFO [o.n.k.i.DiagnosticsManager]   RelationshipTypeStore: used=3 high=2
+2018-06-05 16:32:22.233+0000 INFO [o.n.k.i.DiagnosticsManager]   StringPropertyStore: used=6 high=5
+2018-06-05 16:32:22.233+0000 INFO [o.n.k.i.DiagnosticsManager]   LabelTokenStore: used=5 high=4
+2018-06-05 16:32:22.234+0000 INFO [o.n.k.i.DiagnosticsManager]   SchemaStore: used=1 high=0
+2018-06-05 16:32:22.234+0000 INFO [o.n.k.i.DiagnosticsManager]   RelationshipGroupStore: used=1 high=0
+2018-06-05 16:32:22.234+0000 INFO [o.n.k.i.DiagnosticsManager]   NeoStore: used=15 high=14
+2018-06-05 16:32:22.234+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2018-06-05 16:32:22.234+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS START ---
+2018-06-05 16:32:22.234+0000 INFO [o.n.k.i.DiagnosticsManager] Neostore records:
+2018-06-05 16:32:22.235+0000 INFO [o.n.k.i.DiagnosticsManager] TIME (Creation time): 1527490613776
+2018-06-05 16:32:22.235+0000 INFO [o.n.k.i.DiagnosticsManager] RANDOM_NUMBER (Random number for store id): 7917124774185386807
+2018-06-05 16:32:22.235+0000 INFO [o.n.k.i.DiagnosticsManager] LOG_VERSION (Current log version): 0
+2018-06-05 16:32:22.235+0000 INFO [o.n.k.i.DiagnosticsManager] LAST_TRANSACTION_ID (Last committed transaction): 53
+2018-06-05 16:32:22.235+0000 INFO [o.n.k.i.DiagnosticsManager] STORE_VERSION (Store format version): 16094931155187206
+2018-06-05 16:32:22.235+0000 INFO [o.n.k.i.DiagnosticsManager] FIRST_GRAPH_PROPERTY (First property record containing graph properties): -1
+2018-06-05 16:32:22.235+0000 INFO [o.n.k.i.DiagnosticsManager] LAST_CONSTRAINT_TRANSACTION (Last committed transaction containing constraint changes): 0
+2018-06-05 16:32:22.235+0000 INFO [o.n.k.i.DiagnosticsManager] UPGRADE_TRANSACTION_ID (Transaction id most recent upgrade was performed at): 1
+2018-06-05 16:32:22.235+0000 INFO [o.n.k.i.DiagnosticsManager] UPGRADE_TIME (Time of last upgrade): 1527490613776
+2018-06-05 16:32:22.235+0000 INFO [o.n.k.i.DiagnosticsManager] LAST_TRANSACTION_CHECKSUM (Checksum of last committed transaction): -160467401520
+2018-06-05 16:32:22.235+0000 INFO [o.n.k.i.DiagnosticsManager] UPGRADE_TRANSACTION_CHECKSUM (Checksum of transaction id the most recent upgrade was performed at): 0
+2018-06-05 16:32:22.236+0000 INFO [o.n.k.i.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_VERSION (Log version where the last transaction commit entry has been written into): 0
+2018-06-05 16:32:22.236+0000 INFO [o.n.k.i.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_BYTE_OFFSET (Byte offset in the log file where the last transaction commit entry has been written into): 115103
+2018-06-05 16:32:22.236+0000 INFO [o.n.k.i.DiagnosticsManager] LAST_TRANSACTION_COMMIT_TIMESTAMP (Commit time timestamp for last committed transaction): 1527769132552
+2018-06-05 16:32:22.236+0000 INFO [o.n.k.i.DiagnosticsManager] UPGRADE_TRANSACTION_COMMIT_TIMESTAMP (Commit timestamp of transaction the most recent upgrade was performed at): 0
+2018-06-05 16:32:22.236+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS END ---
+2018-06-05 16:32:22.237+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE START ---
+2018-06-05 16:32:22.238+0000 INFO [o.n.k.i.DiagnosticsManager] Transaction log:
+2018-06-05 16:32:22.238+0000 INFO [o.n.k.i.DiagnosticsManager] Oldest transaction 2 found in log with version 0
+2018-06-05 16:32:22.238+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE END ---
+2018-06-05 16:32:22.242+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2018-06-05 16:32:22.242+0000 INFO [o.n.k.i.DiagnosticsManager] Disk space on partition (Total / Free / Free %): 498876809216 / 50930905088 / 10
+2018-06-05 16:32:22.242+0000 INFO [o.n.k.i.DiagnosticsManager] Storage files: (filename : modification date - size)
+2018-06-05 16:32:22.243+0000 INFO [o.n.k.i.DiagnosticsManager]   index:
+2018-06-05 16:32:22.244+0000 INFO [o.n.k.i.DiagnosticsManager]   - Total: 2018-05-28T13:56:54+0700 - 0.00 B
+2018-06-05 16:32:22.244+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore: 2018-05-31T19:29:47+0700 - 8.00 kB
+2018-06-05 16:32:22.245+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.counts.db.a: 2018-05-31T19:29:47+0700 - 576.00 B
+2018-06-05 16:32:22.247+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.counts.db.b: 2018-05-31T19:17:49+0700 - 576.00 B
+2018-06-05 16:32:22.247+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.id: 2018-06-05T23:32:19+0700 - 9.00 B
+2018-06-05 16:32:22.247+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.labelscanstore.db: 2018-06-05T23:32:19+0700 - 48.00 kB
+2018-06-05 16:32:22.247+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db: 2018-05-31T14:33:14+0700 - 8.00 kB
+2018-06-05 16:32:22.247+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.id: 2018-06-05T23:32:18+0700 - 9.00 B
+2018-06-05 16:32:22.248+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.names: 2018-05-31T14:33:14+0700 - 8.00 kB
+2018-06-05 16:32:22.248+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.names.id: 2018-06-05T23:32:18+0700 - 9.00 B
+2018-06-05 16:32:22.248+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db: 2018-05-31T19:29:47+0700 - 8.00 kB
+2018-06-05 16:32:22.248+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.id: 2018-06-05T23:32:18+0700 - 633.00 B
+2018-06-05 16:32:22.249+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.labels: 2018-05-28T13:56:53+0700 - 8.00 kB
+2018-06-05 16:32:22.249+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.labels.id: 2018-06-05T23:32:18+0700 - 9.00 B
+2018-06-05 16:32:22.249+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db: 2018-05-31T19:29:47+0700 - 7.97 kB
+2018-06-05 16:32:22.249+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.arrays: 2018-05-31T19:29:47+0700 - 16.00 kB
+2018-06-05 16:32:22.249+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.arrays.id: 2018-06-05T23:32:18+0700 - 449.00 B
+2018-06-05 16:32:22.250+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.id: 2018-06-05T23:32:18+0700 - 705.00 B
+2018-06-05 16:32:22.250+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index: 2018-05-31T19:29:47+0700 - 8.00 kB
+2018-06-05 16:32:22.250+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.id: 2018-06-05T23:32:18+0700 - 9.00 B
+2018-06-05 16:32:22.250+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.keys: 2018-05-31T19:29:47+0700 - 8.00 kB
+2018-06-05 16:32:22.250+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.keys.id: 2018-06-05T23:32:18+0700 - 9.00 B
+2018-06-05 16:32:22.251+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.strings: 2018-05-31T19:29:47+0700 - 8.00 kB
+2018-06-05 16:32:22.251+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.strings.id: 2018-06-05T23:32:18+0700 - 145.00 B
+2018-06-05 16:32:22.251+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.relationshipgroupstore.db: 2018-05-28T13:56:53+0700 - 8.00 kB
+2018-06-05 16:32:22.251+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.relationshipgroupstore.db.id: 2018-06-05T23:32:18+0700 - 9.00 B
+2018-06-05 16:32:22.251+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.relationshipstore.db: 2018-05-31T19:29:47+0700 - 7.97 kB
+2018-06-05 16:32:22.252+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.relationshipstore.db.id: 2018-06-05T23:32:18+0700 - 577.00 B
+2018-06-05 16:32:22.252+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db: 2018-05-31T19:29:47+0700 - 8.00 kB
+2018-06-05 16:32:22.252+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.id: 2018-06-05T23:32:18+0700 - 9.00 B
+2018-06-05 16:32:22.252+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.names: 2018-05-31T19:29:47+0700 - 8.00 kB
+2018-06-05 16:32:22.253+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.names.id: 2018-06-05T23:32:18+0700 - 9.00 B
+2018-06-05 16:32:22.253+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.schemastore.db: 2018-05-28T13:56:53+0700 - 8.00 kB
+2018-06-05 16:32:22.253+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.schemastore.db.id: 2018-06-05T23:32:18+0700 - 9.00 B
+2018-06-05 16:32:22.254+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.transaction.db.0: 2018-06-05T23:24:29+0700 - 112.48 kB
+2018-06-05 16:32:22.254+0000 INFO [o.n.k.i.DiagnosticsManager]   profiles:
+2018-06-05 16:32:22.254+0000 INFO [o.n.k.i.DiagnosticsManager]     neostore.769.cacheprof: 2018-06-05T23:23:59+0700 - 21.00 B
+2018-06-05 16:32:22.254+0000 INFO [o.n.k.i.DiagnosticsManager]     neostore.counts.db.a.541.cacheprof: 2018-06-05T23:23:59+0700 - 21.00 B
+2018-06-05 16:32:22.255+0000 INFO [o.n.k.i.DiagnosticsManager]     neostore.counts.db.b.227.cacheprof: 2018-05-31T19:29:21+0700 - 21.00 B
+2018-06-05 16:32:22.255+0000 INFO [o.n.k.i.DiagnosticsManager]     neostore.labelscanstore.db.769.cacheprof: 2018-06-05T23:23:59+0700 - 21.00 B
+2018-06-05 16:32:22.255+0000 INFO [o.n.k.i.DiagnosticsManager]     neostore.labeltokenstore.db.769.cacheprof: 2018-06-05T23:23:59+0700 - 21.00 B
+2018-06-05 16:32:22.255+0000 INFO [o.n.k.i.DiagnosticsManager]     neostore.labeltokenstore.db.names.769.cacheprof: 2018-06-05T23:23:59+0700 - 21.00 B
+2018-06-05 16:32:22.256+0000 INFO [o.n.k.i.DiagnosticsManager]     neostore.nodestore.db.769.cacheprof: 2018-06-05T23:23:59+0700 - 21.00 B
+2018-06-05 16:32:22.256+0000 INFO [o.n.k.i.DiagnosticsManager]     neostore.nodestore.db.labels.769.cacheprof: 2018-06-05T23:23:59+0700 - 21.00 B
+2018-06-05 16:32:22.256+0000 INFO [o.n.k.i.DiagnosticsManager]     neostore.propertystore.db.769.cacheprof: 2018-06-05T23:23:59+0700 - 21.00 B
+2018-06-05 16:32:22.256+0000 INFO [o.n.k.i.DiagnosticsManager]     neostore.propertystore.db.arrays.769.cacheprof: 2018-06-05T23:23:59+0700 - 21.00 B
+2018-06-05 16:32:22.256+0000 INFO [o.n.k.i.DiagnosticsManager]     neostore.propertystore.db.index.769.cacheprof: 2018-06-05T23:23:59+0700 - 21.00 B
+2018-06-05 16:32:22.257+0000 INFO [o.n.k.i.DiagnosticsManager]     neostore.propertystore.db.index.keys.769.cacheprof: 2018-06-05T23:23:59+0700 - 21.00 B
+2018-06-05 16:32:22.257+0000 INFO [o.n.k.i.DiagnosticsManager]     neostore.propertystore.db.strings.769.cacheprof: 2018-06-05T23:23:59+0700 - 21.00 B
+2018-06-05 16:32:22.257+0000 INFO [o.n.k.i.DiagnosticsManager]     neostore.relationshipgroupstore.db.769.cacheprof: 2018-06-05T23:23:59+0700 - 21.00 B
+2018-06-05 16:32:22.258+0000 INFO [o.n.k.i.DiagnosticsManager]     neostore.relationshipstore.db.769.cacheprof: 2018-06-05T23:23:59+0700 - 21.00 B
+2018-06-05 16:32:22.258+0000 INFO [o.n.k.i.DiagnosticsManager]     neostore.relationshiptypestore.db.769.cacheprof: 2018-06-05T23:23:59+0700 - 21.00 B
+2018-06-05 16:32:22.258+0000 INFO [o.n.k.i.DiagnosticsManager]     neostore.relationshiptypestore.db.names.769.cacheprof: 2018-06-05T23:23:59+0700 - 21.00 B
+2018-06-05 16:32:22.258+0000 INFO [o.n.k.i.DiagnosticsManager]     neostore.schemastore.db.769.cacheprof: 2018-06-05T23:23:59+0700 - 21.00 B
+2018-06-05 16:32:22.258+0000 INFO [o.n.k.i.DiagnosticsManager]   - Total: 2018-06-05T23:23:59+0700 - 378.00 B
+2018-06-05 16:32:22.259+0000 INFO [o.n.k.i.DiagnosticsManager]   store_lock: 2018-05-28T13:56:52+0700 - 0.00 B
+2018-06-05 16:32:22.259+0000 INFO [o.n.k.i.DiagnosticsManager] Storage summary: 
+2018-06-05 16:32:22.259+0000 INFO [o.n.k.i.DiagnosticsManager]   Total size of store: 292.44 kB
+2018-06-05 16:32:22.259+0000 INFO [o.n.k.i.DiagnosticsManager]   Total size of mapped files: 175.93 kB
+2018-06-05 16:32:22.259+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2018-06-05 16:32:25.248+0000 WARN [o.n.m.s.s.ServerMetrics] Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-06-05 16:32:25.278+0000 WARN [o.n.m.s.s.ServerMetrics] Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-06-05 16:32:27.410+0000 WARN [o.n.m.s.s.ServerMetrics] Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-06-05 16:32:27.410+0000 WARN [o.n.m.s.s.ServerMetrics] Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-06-05 16:32:30.407+0000 WARN [o.n.m.s.s.ServerMetrics] Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-06-05 16:32:30.407+0000 WARN [o.n.m.s.s.ServerMetrics] Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-06-05 16:32:33.373+0000 INFO [o.n.k.i.DiagnosticsManager] --- SERVER STARTED START ---
+2018-06-05 16:32:33.409+0000 WARN [o.n.m.s.s.ServerMetrics] Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-06-05 16:32:33.410+0000 WARN [o.n.m.s.s.ServerMetrics] Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-06-05 16:32:35.329+0000 INFO [o.n.m.s.s.ServerMetrics] Server thread metrics has been registered successfully
+2018-06-05 16:32:37.447+0000 INFO [o.n.k.i.DiagnosticsManager] --- SERVER STARTED END ---

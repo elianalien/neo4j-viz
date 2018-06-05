@@ -378,3 +378,32 @@ org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due
 2018-06-05 16:24:29.193+0000 INFO  Neo4j Server shutdown initiated by request
 2018-06-05 16:24:29.303+0000 INFO  Stopping...
 2018-06-05 16:24:29.461+0000 INFO  Stopped.
+Active database: graph.db
+Directories in use:
+  home:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0
+  config:       /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/conf
+  logs:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/logs
+  plugins:      /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/plugins
+  import:       /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/import
+  data:         /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/data
+  certificates: /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/certificates
+  run:          /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/run
+Starting Neo4j.
+2018-06-05 16:32:12.686+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-06-05 16:32:12.922+0000 INFO  Starting...
+2018-06-05 16:32:17.206+0000 INFO  Initiating metrics...
+2018-06-05 16:32:21.404+0000 INFO  Sending metrics to CSV file at /Users/eliandaiva/Library/Application Support/Neo4j Desktop/Application/neo4jDatabases/database-455fe030-ceb7-45fb-b4ef-d60fb8eca8de/installation-3.4.0/metrics
+2018-06-05 16:32:22.119+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-06-05 16:32:25.248+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-06-05 16:32:25.277+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-06-05 16:32:27.410+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-06-05 16:32:27.410+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-06-05 16:32:30.407+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-06-05 16:32:30.407+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-06-05 16:32:33.373+0000 INFO  Started.
+2018-06-05 16:32:33.409+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2018-06-05 16:32:33.410+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2018-06-05 16:32:34.920+0000 INFO  Mounted REST API at: /db/manage
+2018-06-05 16:32:35.329+0000 INFO  Server thread metrics has been registered successfully
+2018-06-05 16:32:37.371+0000 WARN  Low configured threads: (max={} - required={})={} < warnAt={} for {}
+2018-06-05 16:32:37.447+0000 INFO  Remote interface available at http://localhost:7474/
