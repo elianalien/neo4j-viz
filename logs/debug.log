@@ -5027,3 +5027,11 @@ org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due
 2018-06-05 16:32:33.410+0000 WARN [o.n.m.s.s.ServerMetrics] Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
 2018-06-05 16:32:35.329+0000 INFO [o.n.m.s.s.ServerMetrics] Server thread metrics has been registered successfully
 2018-06-05 16:32:37.447+0000 INFO [o.n.k.i.DiagnosticsManager] --- SERVER STARTED END ---
+2018-06-05 16:38:56.896+0000 INFO [o.n.k.i.f.GraphDatabaseFacadeFactory] Shutdown started
+2018-06-05 16:38:56.897+0000 INFO [o.n.k.i.f.GraphDatabaseFacadeFactory] Database is now unavailable
+2018-06-05 16:38:56.903+0000 INFO [o.n.b.i.BackupServer] BackupServer communication server shutting down and unbinding from  /127.0.0.1:6362
+2018-06-05 16:38:56.956+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by database shutdown @ txId: 53 checkpoint started...
+2018-06-05 16:38:57.049+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by database shutdown @ txId: 53 checkpoint completed in 93ms
+2018-06-05 16:38:57.050+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2018-06-05 16:38:57.083+0000 INFO [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics START ---
+2018-06-05 16:38:57.083+0000 INFO [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics END ---

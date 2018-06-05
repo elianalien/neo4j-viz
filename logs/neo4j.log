@@ -407,3 +407,6 @@ Starting Neo4j.
 2018-06-05 16:32:35.329+0000 INFO  Server thread metrics has been registered successfully
 2018-06-05 16:32:37.371+0000 WARN  Low configured threads: (max={} - required={})={} < warnAt={} for {}
 2018-06-05 16:32:37.447+0000 INFO  Remote interface available at http://localhost:7474/
+2018-06-05 16:38:56.812+0000 INFO  Neo4j Server shutdown initiated by request
+2018-06-05 16:38:56.896+0000 INFO  Stopping...
+2018-06-05 16:38:57.089+0000 INFO  Stopped.
