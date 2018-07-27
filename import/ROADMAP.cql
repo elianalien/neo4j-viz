@@ -1,3 +1,11 @@
+// cara masukin ke database baru:
+// setiap habis "//" dikopi - paste - run di browsernya
+// urutannya: 
+// 1. project kind
+// 2. domain
+// 3. stack
+// 
+
 // project kind
 CREATE (project:Project {kind:'Interactive Installation', domain:['uidesign', 'uxdesign', 'animation', 'multimedia', 'installation','cocreation','designsprint', 'hardware', 'usability','database','devops']})
 CREATE (:Project {kind:'Web App', domain:['uidesign', 'uxdesign', 'animation', 'frontend','backend','cocreation','usability','devops', 'cocreation','designsprint','indepth','database','devops']})
